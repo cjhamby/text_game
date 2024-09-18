@@ -1,6 +1,5 @@
 //inventory.js
-//chris hamby
-//here we make the objects that can be in the inventory
+//objects that can be in the inventory
 //as well as functions dealing with the inventory
 
 var INVENTORY = [];			//an array of inventory objects
