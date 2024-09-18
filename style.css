@@ -1,0 +1,109 @@
+*{
+	background-color: #202020;
+	color: #E0E0E0;
+}
+h2{
+	text-align: center;
+	margin: 1px;
+}
+/*the ID of the box that contains the inventory info */
+#inventory {
+	visibility: hidden;
+	border: 1px dashed white;
+	width: 250px;
+	height: 110px;
+	position: absolute;
+	left: 7%;
+	padding:1%;
+	font-family: "courier";
+}
+
+#stats {
+	visibility: visible;
+	border: 1px dashed white;
+	padding: 1%;
+	width: 250px;
+	height: 110px;
+	position: absolute;
+	right:7%;	
+	font-family: "courier";
+}
+
+/*the ID of the box containing the debug info */
+#debug {
+	visibility: visible;
+	border: 1px dashed white;
+	padding: 1%;
+	width: 250px;
+	font-family: "courier";
+	position: absolute;
+	right:7%;
+	bottom:10px;
+}
+
+input[type="radio"]{
+	visibility: visible;
+	float: left;
+}
+input[type="radio"]:disabled {
+	visibility:hidden;
+}
+
+
+
+
+/*This box contains the scene text and buttons */
+#box {
+	border: 1px solid black;
+	margin: auto;
+	margin-top:10px;
+	padding:2%;
+	text-align: center;
+	width:	500px;
+	height: 220px;
+	background-color: #ffffff;
+	color: #000000;
+	border-radius: 14px;
+	position: relative;
+}
+
+#sceneText{
+	padding-left: 25px;
+	text-align: left;
+	font-size: 16px;
+	font-family: "courier";
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.ACTION{
+	width: 200px;
+	height: 45px;
+	border: 1px white;
+	border-radius: 4px;
+	margin: 2px;
+	background-color: #202020;
+	font-family: "Georgia";
+	position: absolute;
+}
+.ACTION:disabled {
+	background-color: #e0e0e0;
+	border: 1px black;
+}
+.ACTION:active {
+	background-color: #d09000;
+}
+
+#action1 {
+	visibility: visible;
+	bottom:5%;
+	left:6%;
+}
+#action2 {
+	visibility: visible;
+	bottom:5%;
+	right:6%;
+}
+#action3 {
+	visibility: hidden;
+}

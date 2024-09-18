@@ -1,0 +1,64 @@
+<!--CHOOSE YOUR OWN ADVENTURE -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>CYOA game</title>
+<!-- link the external .css and .js files -->
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="inventory.js"></script>
+<script type="text/javascript" src="scenes.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+
+<h2>Adventure Game!</h2>
+</head>
+
+<body>
+<!-- -->
+
+<div id = "box">
+	<!-- display what situation the player is in -->
+	<div id="sceneText"></div>	
+	<!-- display the options available to the player -->
+	<input type="button" class="ACTION" id="action1" value=""  onclick="nextScene_a1()">
+	<input type="button" class="ACTION" id="action2" value=""  onclick="nextScene_a2()">
+	<input type="button" class="ACTION" id="action3" value="testInc"  onclick="incrementScenario()"></br>
+</div>
+<p>
+
+
+<!-- shows the inventory information -->
+<!-- I don't know if class will be used, or if value will be used -->
+<div id = "inventory">
+	<h2>Inventory</h2>
+	<span style="text-align:center;">Select an item to use</span></br>
+	<input type=radio id="item0" class="ITEM" value=""><span id="item0Name"></span></br>
+	<input type=radio id="item1" class="ITEM" value=""><span id="item1Name"></span></br>
+	<input type=radio id="item2" class="ITEM" value=""><span id="item2Name"></span></br>
+</div> <!--------------------------- END OF INVENTORY SECTION-->
+
+
+
+<div id = "stats"> <!-- show stats ---------------------------->
+<h2>Stats</h2>											<!-- -->
+Stamina:<span id="staminaDisplay"></span></br>			<!-- -->
+</div> <!------------------------------ END OF STATUS SECTION-->
+
+
+
+<div id = "debug"> <!-- shows the debug information ----------->
+<h2>Debug</h2>   										<!-- -->
+scene=<span id="scene">0</span></br>					<!-- -->
+msg=<span id="debugmsg"></span>							<!-- -->
+</div> <!------------------------------- END OF DEBUG SECTION-->
+
+<!-- first initialization of text values -->
+<script>
+	refreshValues();
+	refreshInventoryDisplay();
+</script>
+</body>
+
+
+
+</html>
