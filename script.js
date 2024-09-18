@@ -1,5 +1,4 @@
 //script for adventure game
-//chris hamby
 //these are the basic functions that run the game
 
 // Player Variables ------------------------------------
